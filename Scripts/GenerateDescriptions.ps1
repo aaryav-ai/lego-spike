@@ -1,9 +1,17 @@
 param (
     [Parameter(Position=0,mandatory=$true)]
-    [string]$username
+    [ValidateSet('User','Missions')]
+    [string]$type,
+    # Username will be ignored if type == Missions
+    [Parameter(Position=1,mandatory=$true)]
+    [string]$username    
 )
 
-$sourcePath = Join-Path -Path (Get-Item -Path (Get-Location).Path).Parent.FullName -ChildPath "Users\$username"
+if ($type -eq "Missions") {
+    $sourcePath = Join-Path -Path (Get-Item -Path (Get-Location).Path).Parent.FullName -ChildPath "Missions"
+} else {
+    $sourcePath = Join-Path -Path (Get-Item -Path (Get-Location).Path).Parent.FullName -ChildPath "Users\$username"
+}
 
 # Check if source path exists
 if (-not (Test-Path -Path $sourcePath)) {
@@ -13,6 +21,8 @@ if (-not (Test-Path -Path $sourcePath)) {
 
 #Iterate through all files in the User's directory
 $files = Get-ChildItem -Path $sourcePath -Filter "*.llsp3" -File
+$count = ($files | Measure-Object).Count
+
 
 # Create a new Readme.md
 $readmefile = Join-Path $sourcePath -ChildPath "README.md"
@@ -57,3 +67,4 @@ foreach ($file in $files) {
     " " | Out-File -Append $readmefile
 
 }
+Write-Host "Created descriptions for $count projects at '$readmefile'"

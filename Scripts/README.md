@@ -24,4 +24,13 @@ PS > .\Move-Items.ps1 -sourcePath "C:\Users\aarya\Documents\LEGO Education SPIKE
 
 Since the files are binary, I thought it was best to describe the projects and create SVG diagrams for ease of reading.
 
-`.\GenerateDescriptions.ps1 -username aaryavt`
+```
+# Use this to generate descriptions for user's project
+.\GenerateDescriptions.ps1 -type User -username aaryavt
+Created descriptions for 122 projects at 'C:\Users\aarya\code\lego-spike\Users\aaryavt\README.md'
+
+# Use this to generate description for Missions
+.\GenerateDescriptions.ps1 -type Missions -username test
+Created descriptions for 2 projects at 'C:\Users\aarya\code\lego-spike\Missions\README.md'
+```
+
