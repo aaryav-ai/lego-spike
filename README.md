@@ -1,2 +1,2 @@
-# lego-spike
-Code to program FLL Spike Prime robots
+# Team CAAATS
+This is Team CAAATS' GitHub page for code collaboration.
