@@ -1,4 +1,5 @@
 param (
+    [Parameter(Position=0,mandatory=$true)]
     [string]$username
 )
 
@@ -16,7 +17,7 @@ $files = Get-ChildItem -Path $sourcePath -Filter "*.llsp3" -File
 # Create a new Readme.md
 $readmefile = Join-Path $sourcePath -ChildPath "README.md"
 
-"#$username's projects and descriptions" | Out-File $readmefile
+"# $username's projects and descriptions" | Out-File $readmefile
 " " | Out-File $readmefile -Append
 
 
@@ -24,17 +25,24 @@ foreach ($file in $files) {
 
     # Title
     $title = (Get-Item $file.FullName).Name.Split(".")[0]
-    "##$title" | Out-File -Append $readmefile
+    "## $title" | Out-File -Append $readmefile
     " " | Out-File -Append $readmefile
     
     # Description
     $desc = ..\..\flippertools\flipper2text $file.FullName
-    "###Description for $title" | Out-File -Append $readmefile
-    " " | Out-File -Append $readmefile
-    $desc.Split("`n") | % { $_ | Out-File $readmefile -Append }
+    "### Description for $title" | Out-File -Append $readmefile
     " " | Out-File -Append $readmefile
     
+    #Check if description is null
+    if ($null -ne $desc) {
+        $desc.Split("`n") | ForEach-Object { $_ | Out-File $readmefile -Append }
+        " " | Out-File -Append $readmefile
+    }
+    
     # Diagram
+    "### Diagram for $title" | Out-File -Append $readmefile
+    " " | Out-File -Append $readmefile
+    
     # Check if img path already exists
     $imgPath = Join-Path $sourcePath -ChildPath "img"
     if (-not (Test-Path -Path $imgPath)) {
