@@ -1,0 +1,93 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="1.1" 
+    preserveAspectRatio="xMidYMid meet"
+    viewBox="0 0 148 49"><style>
+* {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  word-wrap: break-word;
+}
+.blocklyPath {
+  stroke-width: 1px;
+}
+.blocklyText {
+  fill: rgb(255, 255, 255);
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5), 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+.blocklyDropdownText {
+  fill: rgb(255, 255, 255) !important;
+}
+
+.blocklyEditableText > .blocklyText:not(.blocklyDropdownText),
+.blocklyFlyoutButton > .blocklyText {
+  text-shadow: none;
+}
+
+.blocklyNonEditableText > text, .blocklyEditableText > text {
+  fill: rgb(87, 94, 117);
+}
+.scratchCommentForeignObject {
+  background-color: #fff9d9;
+}
+.scratchCommentTextarea {
+  color: #a9983e;
+  background-color: #fff9d9;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.scratchCommentText {
+  font-size: 16px;
+  fill: #fff9d9;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+.scratchCommentBody {
+  background-color: #fff9d9; }
+.scratchCommentTopBar {
+  fill: #fff2ae;
+  fill-opacity: 0.1}
+.scratchCommentRect {
+  fill: #fff2ae; }
+.scratchWorkspaceCommentBorder {
+  stroke: #fff2ae; }
+.scratchCommentTopBar ~ use, .scratchCommentTopBar ~ image {
+  opacity: 0.4; }
+.scratchCommentTarget {
+  display: none;
+}
+.scratchCommentResizeSE, .scratchCommentResizeSW {
+  fill: transparent;
+}
+.blocklyResizeLine {
+  stroke: #888;
+  stroke-width: 1;
+}
+@import '~#root/lls/styles/index.scss';
+
+g[data-category^='doodle'] > path {
+  fill: white;
+  stroke-width: 2;
+  stroke-dasharray: 6;
+}
+g[data-category^='doodle-'] > .blocklyText {
+  /*
+   * The doodle block label is padded with dots to make it longer.
+   * clip-path makes the dots invisible.
+   */
+  clip-path: inset(0 4px 0 4px);
+  text-shadow: none !important;
+  fill: $color-grey-10;
+}
+
+g[data-category='doodle-any'] > .blocklyText {
+  fill: white;
+}
+</style><g xmlns="http://www.w3.org/2000/svg" class="blocklyWorkspace" transform="translate(-342.25,-189.8625030517578)"><g class="blocklyBlockCanvas" transform="translate(430,120.00000000000011) scale(0.675)"><g data-id="H-d3DJYrIZqd1QLKjzRu" class="blocklyDraggable" data-shapes="hat" data-category="flipperevents" transform="translate(-130,120)"><path class="blocklyPath blocklyBlockBackground" stroke="#B09400" fill="#F5C402" fill-opacity="1" d="m 0,0 c 25,-22 71,-22 96,0 H 214.8518524169922 a 4,4 0 0,1 4,4 v 40  a 4,4 0 0,1 -4,4 H 48   c -2,0 -3,1 -4,2 l -4,4 c -1,1 -2,2 -4,2 h -12 c -2,0 -3,-1 -4,-2 l -4,-4 c -1,-1 -2,-2 -4,-2 H 4 a 4,4 0 0,1 -4,-4 z"/><g transform="translate(8, 4) "><use xlink:href="#9f1e7879e21921ed3b06c5023dc831a5a3e4b558"/></g><g transform="translate(56, 4) "><line stroke="#C8A300" stroke-linecap="round" x1="0" y1="0" x2="0" y2="36"/></g><text class="blocklyText" y="2" text-anchor="middle" dominant-baseline="middle" dy="0" x="72.9259262084961" transform="translate(65, 24) ">when program starts</text></g></g><g class="blocklyBubbleCanvas" transform="translate(430,120.00000000000011) scale(0.675)"/><defs><image height="40px" width="40px" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCIgaWQ9ImRzbUljb24iPjxnIGlkPSJJY29uLzQ4L3BsYXktYmxvY2stb3V0bGluZWQiIHN0cm9rZS13aWR0aD0iMSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMzUuMzc2IDI0TDEzLjI1IDM4LjM4MlY5LjYxOEwzNS4zNzYgMjR6IiBpZD0iQ29tYmluZWQtU2hhcGUiIHN0cm9rZT0iI0NFQUMwMSIgc3Ryb2tlLXdpZHRoPSIxLjUiIGZpbGw9IiNGRkZGRkYiLz48L2c+PC9zdmc+" id="9f1e7879e21921ed3b06c5023dc831a5a3e4b558"/></defs></g></svg>
