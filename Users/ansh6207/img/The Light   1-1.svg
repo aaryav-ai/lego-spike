@@ -1,0 +1,93 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="1.1" 
+    preserveAspectRatio="xMidYMid meet"
+    viewBox="0 0 162 102"><style>
+* {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  word-wrap: break-word;
+}
+.blocklyPath {
+  stroke-width: 1px;
+}
+.blocklyText {
+  fill: rgb(255, 255, 255);
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5), 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+.blocklyDropdownText {
+  fill: rgb(255, 255, 255) !important;
+}
+
+.blocklyEditableText > .blocklyText:not(.blocklyDropdownText),
+.blocklyFlyoutButton > .blocklyText {
+  text-shadow: none;
+}
+
+.blocklyNonEditableText > text, .blocklyEditableText > text {
+  fill: rgb(87, 94, 117);
+}
+.scratchCommentForeignObject {
+  background-color: #fff9d9;
+}
+.scratchCommentTextarea {
+  color: #a9983e;
+  background-color: #fff9d9;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.scratchCommentText {
+  font-size: 16px;
+  fill: #fff9d9;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+.scratchCommentBody {
+  background-color: #fff9d9; }
+.scratchCommentTopBar {
+  fill: #fff2ae;
+  fill-opacity: 0.1}
+.scratchCommentRect {
+  fill: #fff2ae; }
+.scratchWorkspaceCommentBorder {
+  stroke: #fff2ae; }
+.scratchCommentTopBar ~ use, .scratchCommentTopBar ~ image {
+  opacity: 0.4; }
+.scratchCommentTarget {
+  display: none;
+}
+.scratchCommentResizeSE, .scratchCommentResizeSW {
+  fill: transparent;
+}
+.blocklyResizeLine {
+  stroke: #888;
+  stroke-width: 1;
+}
+@import '~#root/lls/styles/index.scss';
+
+g[data-category^='doodle'] > path {
+  fill: white;
+  stroke-width: 2;
+  stroke-dasharray: 6;
+}
+g[data-category^='doodle-'] > .blocklyText {
+  /*
+   * The doodle block label is padded with dots to make it longer.
+   * clip-path makes the dots invisible.
+   */
+  clip-path: inset(0 4px 0 4px);
+  text-shadow: none !important;
+  fill: $color-grey-10;
+}
+
+g[data-category='doodle-any'] > .blocklyText {
+  fill: white;
+}
+</style><g xmlns="http://www.w3.org/2000/svg" class="blocklyWorkspace" transform="translate(-193.7833251953125,-510.5666809082031)"><g class="blocklyBlockCanvas" transform="translate(-2.0463630789890885e-12,2.842170943040401e-14) scale(1.15)"><g data-id="U-LP4,pR]r15UJgI_!AL" class="blocklyDraggable" data-shapes="hat" data-category="horizontalevents" transform="translate(168.50725522248644,443.97103218410336)"><path class="blocklyPath blocklyBlockBackground" stroke="#B09400" fill="#F5C402" fill-opacity="1" d="m 32,0 A 32,32 0 0,0 0,32 a 32,32 0 0,0 32,32 H 64 a 4,4 0 0,0 4,-4 v -10 c 0,-2 1,-3 2,-4 l 4,-4 c 1,-1 2,-2 2,-4 v -12 c 0,-2 -1,-3 -2,-4 l -4,-4 c -1,-1 -2,-2 -2,-4 V 4 a 4,4 0 0,0 -4,-4 z"/><g transform="translate(20,12) scale(1 1)"><use xlink:href="#a4f9be26de20b04eb57f343aa5d58b99087306a5"/></g><g data-id="Ey@ZBy4Lxa1Kw$ZSP92s" class="blocklyDraggable blocklySelected" data-shapes="stack" data-category="horizontaldisplay" transform="translate(68,-5.684341886080802e-14)"><path class="blocklyPath blocklyBlockBackground" stroke="#571CC1" fill="#9B6AF6" fill-opacity="1" d="m 4,0 A 4,4 0 0,0 0,4 V 14 c 0,2 1,3 2,4 l 4,4 c 1,1 2,2 2,4 v 12 c 0,2 -1,3 -2,4 l -4,4 c -1,1 -2,2 -2,4 V 60 a 4,4 0 0,0 4,4 H 60 a 4,4 0 0,0 4,-4 v -10 c 0,-2 1,-3 2,-4 l 4,-4 c 1,-1 2,-2 2,-4 v -12 c 0,-2 -1,-3 -2,-4 l -4,-4 c -1,-1 -2,-2 -2,-4 V 4 a 4,4 0 0,0 -4,-4 z"/><g data-id="aaC!]?,ypYum6VF{=Q-2" data-shapes="argument" transform="translate(8,56)"><path class="blocklyPath blocklyBlockBackground" stroke="#571CC1" fill="#9B6AF6" fill-opacity="1" d="m 16,0 A 16,16 0 0,0 0,16 V 16 a 16,16 0 0,0 16,16 H 32 a 16,16 0 0,0 16,-16 v 0 a 16,16 0 0,0 -16,-16 z"/><g class="blocklyEditableText" style="cursor: default;"><text class="blocklyText blocklyDropdownText" x="0" y="15" dominant-baseline="middle" dy="0" text-anchor="middle"> </text></g><g id="Icon/Essential/dropdown-arrow" stroke-width="1" fill-rule="nonzero" transform="translate(2.3999999999999995 -5) scale(0.9)"><path d="M23.768 31.345a3.95 3.95 0 01-2.304-.896l-.173-.151-7.127-6.663a3.524 3.524 0 01-1.144-2.59c0-.981.408-1.903 1.144-2.592a3.95 3.95 0 012.71-1.053c.942 0 1.836.318 2.542.902l.172.151 4.414 4.128 4.414-4.128a3.937 3.937 0 012.478-1.046l.235-.007a3.95 3.95 0 012.71 1.053 3.522 3.522 0 011.145 2.59c0 .908-.348 1.764-.98 2.429l-.165.162-7.125 6.664a3.942 3.942 0 01-2.478 1.047l-.234.006-.234-.006z" id="Path" style="fill: rgb(87, 28, 193);"/><path d="M31.129 18.6c-.648 0-1.256.21-1.737.595l-.156.135-5.234 4.894-5.233-4.894a2.758 2.758 0 00-1.894-.73 2.75 2.75 0 00-1.891.73 2.33 2.33 0 00-.764 1.714c0 .581.218 1.13.622 1.571l.141.143 7.127 6.663a2.736 2.736 0 001.678.722l.214.008.214-.008a2.752 2.752 0 001.523-.587l.156-.135 7.126-6.664a2.321 2.321 0 00.763-1.714c0-.645-.268-1.25-.764-1.713a2.751 2.751 0 00-1.891-.73z" id="Path" fill="#FFF"/></g></g><g transform="translate(16,12) scale(1 1)"><use xlink:href="#16482e004be1483e1b4bc6b3554ceda959d6690a"/></g><path class="blocklyPath" style="visibility: hidden" d=""/></g></g></g><g class="blocklyBubbleCanvas" transform="translate(-2.0463630789890885e-12,2.842170943040401e-14) scale(1.15)"/><defs><image height="40px" width="40px" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAm1JREFUWEftmD+P0mAcx79P4h2blzCY3KSjmzA63RkTCtPFVyAMhTgJ76B9BZYVlzK5mTqdxsF28VzgejkGvEBSEpXEBOzZS8gRuMf81EaMx7W0hWsMXbo8fz58eT6/53nKEPOHxZwPa8Cw/9A6wXWClMB+DXkGPAWQAmAyDkUooR42HT/9Pdfg/nPs3kym3t29/wzJ7V0M+zq6DZneFuOoCCVofiYK2sYT8E0Neiqj7dy6vffXHATaPqjAGZg6Z5BzIvSgEFf18wR8XYMtiHxr3iCfT1R0mzJGjqXyKeTcE1hRgvoB5ILIr5xzMrZhHSvotaqYnNtKYhPygwLsKEAjAXRBCLTTkAjUZgyKIEIOCxkpoAszciy0P1Tw1dJIJCmM8UsBdEFnjDc5QyWISEsFdEFnRNL5FIVFRFoJoAvaaynoNGRMxraa2EDFj0grBSRQ1/huUybLpWwR1bB10LPMBDGVRDp8+4gKvZotojBvjJUnOAtCab5/mca5Y6UzRZiXQV4rIAG1jAI+fVTlXAlS7AAn41MYL+7gYmzHL0FncIRjI4/vQ7OeE5GPzRqk1H5th8opGKSsCCU2FtOphw4Vk7FdTWxAik0d/HJSR6cp0ZHsFZ+iHJudZNg30G1I+NbXjQsGKTZ78eish/ZBmU4zPQ5IuSLUIMWc+kRaB2cF4BzKvNq2CGwkgARGB4FFBfAD6gfQfvjY3rqxefm1JIwAUQFq6Yy29++tzvi5zs4GZmABIgH8cy9WkNzegWvmsK/3GEf52u/F9Ct/f1koA7gH4IgDShgz/STntvFcg4sMtoy2a8Cwqa4T/O8T/AF4SXo4B309ewAAAABJRU5ErkJggg==" id="a4f9be26de20b04eb57f343aa5d58b99087306a5"/><image height="40px" width="40px" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCIgaWQ9ImRzbUljb24iPjxnIGlkPSJJY29uLzQ4LzN4M21hdHJpeCIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTQpIj48cGF0aCBkPSJNMzkuNjEzIDQyLjcwM0g3Ljg5QTMuMDkgMy4wOSAwIDAxNC44IDM5LjYxNFY3Ljg5QTMuMDkgMy4wOSAwIDAxNy44ODkgNC44aDMxLjcyNGEzLjA5IDMuMDkgMCAwMTMuMDg5IDMuMDl2MzEuNzI0YTMuMDg5IDMuMDg5IDAgMDEtMy4wODkgMy4wOSIgaWQ9IkJvcmRlciIgc3R5bGU9ImZpbGw6IHJnYigxMDUsIDMxLCAyNDApOyIvPjxwYXRoIGQ9Ik0xNi4wNiAxNi43NzJINy45MThhLjc5Mi43OTIgMCAwMS0uNzkyLS43OTNWNy44MzhjMC0uNDM4LjM1NS0uNzkzLjc5Mi0uNzkzaDguMTQyYy40MzggMCAuNzkzLjM1NS43OTMuNzkzdjguMTRjMCAuNDQtLjM1NS43OTQtLjc5My43OTQiIGlkPSIxIiBmaWxsPSIjRkZGIiBzdHlsZT0iZmlsbDogcmdiKDExOSwgMjMyLCAyNTUpOyIvPjxwYXRoIGQ9Ik0yNy44MjIgMTYuNzcySDE5LjY4YS43OTMuNzkzIDAgMDEtLjc5My0uNzkzVjcuODM4YzAtLjQzOC4zNTUtLjc5My43OTMtLjc5M2g4LjE0Yy40MzkgMCAuNzk0LjM1NS43OTQuNzkzdjguMTRjMCAuNDQtLjM1NS43OTQtLjc5My43OTQiIGlkPSIyIiBmaWxsPSIjRkZGIiBzdHlsZT0iZmlsbDogcmdiKDI1MiwgMTcyLCAwKTsiLz48cGF0aCBkPSJNMzkuNTg0IDE2Ljc3MmgtOC4xNGEuNzkzLjc5MyAwIDAxLS43OTQtLjc5M1Y3LjgzOGMwLS40MzguMzU1LS43OTMuNzkzLS43OTNoOC4xNGMuNDM5IDAgLjc5NC4zNTUuNzk0Ljc5M3Y4LjE0YzAgLjQ0LS4zNTUuNzk0LS43OTMuNzk0IiBpZD0iMyIgZmlsbD0iI0ZGRiIgc3R5bGU9ImZpbGw6IHJnYigxOTIsIDk3LCAyNDEpOyIvPjxwYXRoIGQ9Ik0xNi4wNiAyOC42MTVINy45MThhLjc5My43OTMgMCAwMS0uNzkyLS43OTNWMTkuNjhjMC0uNDM4LjM1NS0uNzkyLjc5Mi0uNzkyaDguMTQyYy40MzggMCAuNzkzLjM1NC43OTMuNzkydjguMTQyYS43OTMuNzkzIDAgMDEtLjc5My43OTMiIGlkPSI0IiBmaWxsPSIjRkZGIiBzdHlsZT0iZmlsbDogcmdiKDExOSwgMjMyLCAyNTUpOyIvPjxwYXRoIGQ9Ik0yNy44MjIgMjguNjE1SDE5LjY4YS43OTMuNzkzIDAgMDEtLjc5My0uNzkzVjE5LjY4YzAtLjQzOC4zNTUtLjc5Mi43OTMtLjc5Mmg4LjE0Yy40MzkgMCAuNzk0LjM1NC43OTQuNzkydjguMTQyYS43OTMuNzkzIDAgMDEtLjc5My43OTMiIGlkPSI1IiBmaWxsPSIjRkZGIiBzdHlsZT0iZmlsbDogcmdiKDI1MiwgMTcyLCAwKTsiLz48cGF0aCBkPSJNMzkuNTg0IDI4LjYxNWgtOC4xNGEuNzkzLjc5MyAwIDAxLS43OTQtLjc5M1YxOS42OGMwLS40MzguMzU1LS43OTIuNzkzLS43OTJoOC4xNGMuNDM5IDAgLjc5NC4zNTQuNzk0Ljc5MnY4LjE0MmEuNzkzLjc5MyAwIDAxLS43OTMuNzkzIiBpZD0iNiIgZmlsbD0iI0ZGRiIgc3R5bGU9ImZpbGw6IHJnYigyNTUsIDIyNywgOTYpOyIvPjxwYXRoIGQ9Ik0xNi4wNiA0MC40NThINy45MThhLjc5My43OTMgMCAwMS0uNzkyLS43OTN2LTguMTRjMC0uNDM5LjM1NS0uNzk0Ljc5Mi0uNzk0aDguMTQyYy40MzggMCAuNzkzLjM1NS43OTMuNzkzdjguMTQxYS43OTMuNzkzIDAgMDEtLjc5My43OTMiIGlkPSI3IiBmaWxsPSIjRkZGIiBzdHlsZT0iZmlsbDogcmdiKDI1NSwgMjI3LCA5Nik7Ii8+PHBhdGggZD0iTTI3LjgyMiA0MC40NThIMTkuNjhhLjc5My43OTMgMCAwMS0uNzkzLS43OTN2LTguMTRjMC0uNDM5LjM1NS0uNzk0Ljc5My0uNzk0aDguMTRjLjQzOSAwIC43OTQuMzU1Ljc5NC43OTN2OC4xNDFhLjc5My43OTMgMCAwMS0uNzkzLjc5MyIgaWQ9IjgiIGZpbGw9IiNGRkYiIHN0eWxlPSJmaWxsOiByZ2IoMjUyLCAxNzIsIDApOyIvPjxwYXRoIGQ9Ik0zOS41ODQgNDAuNDU4aC04LjE0YS43OTMuNzkzIDAgMDEtLjc5NC0uNzkzdi04LjE0YzAtLjQzOS4zNTUtLjc5NC43OTMtLjc5NGg4LjE0Yy40MzkgMCAuNzk0LjM1NS43OTQuNzkzdjguMTQxYS43OTMuNzkzIDAgMDEtLjc5My43OTMiIGlkPSI5IiBmaWxsPSIjRkZGIiBzdHlsZT0iZmlsbDogcmdiKDI1NSwgMjI3LCA5Nik7Ii8+PC9nPjwvc3ZnPg==" id="16482e004be1483e1b4bc6b3554ceda959d6690a"/></defs></g></svg>
