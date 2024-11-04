@@ -4,3 +4,4 @@ git pull
 git add .
 $m = (Get-Date).ToString() + " - code from Aaryav's laptop"
 git commit -m $m
+git push origin
