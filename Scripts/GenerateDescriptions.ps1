@@ -8,9 +8,9 @@ param (
 )
 
 if ($type -eq "Missions") {
-    $sourcePath = Join-Path -Path (Get-Item -Path (Get-Location).Path).Parent.FullName -ChildPath "Missions"
+    $sourcePath = Join-Path -Path (Get-Item -Path (Get-Location).Path).FullName -ChildPath "Missions"
 } else {
-    $sourcePath = Join-Path -Path (Get-Item -Path (Get-Location).Path).Parent.FullName -ChildPath "Users\$username"
+    $sourcePath = Join-Path -Path (Get-Item -Path (Get-Location).Path).FullName -ChildPath "Users\$username"
 }
 
 # Check if source path exists
@@ -39,7 +39,7 @@ foreach ($file in $files) {
     " " | Out-File -Append $readmefile
     
     # Description
-    $desc = ..\..\flippertools\flipper2text $file.FullName
+    $desc = ..\flippertools\flipper2text $file.FullName
     "### Description for $title" | Out-File -Append $readmefile
     " " | Out-File -Append $readmefile
     
@@ -61,7 +61,7 @@ foreach ($file in $files) {
 
     # Create the svg
     $imgfilePath = Join-Path $imgPath -ChildPath "$title.svg"
-    ..\..\flippertools\flipper2svg -f $file.FullName $imgfilePath
+    ..\flippertools\flipper2svg -f $file.FullName $imgfilePath
 
     "<img src='./img/$title.svg' />" | Out-File -Append $readmefile
     " " | Out-File -Append $readmefile
