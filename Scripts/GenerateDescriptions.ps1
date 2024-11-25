@@ -8,7 +8,7 @@ param (
 )
 
 if ($type -eq "Missions") {
-    $sourcePath = Join-Path -Path (Get-Item -Path (Get-Location).Path).FullName -ChildPath "Missions"
+    $sourcePath = Join-Path -Path (Get-Item -Path (Get-Location).Parent.Path).FullName -ChildPath "Missions"
 } else {
     $sourcePath = Join-Path -Path (Get-Item -Path (Get-Location).Path).FullName -ChildPath "Users\$username"
 }
@@ -25,7 +25,7 @@ $count = ($files | Measure-Object).Count
 
 
 # Create a new Readme.md
-$readmefile = Join-Path $sourcePath -ChildPath "README.md"
+$readmefile = Join-Path $sourcePath "README.md"
 
 "# $username's projects and descriptions" | Out-File $readmefile
 " " | Out-File $readmefile -Append
